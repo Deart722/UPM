@@ -1,24 +1,183 @@
-!SESSION 2024-04-11 14:07:23.824 -----------------------------------------------
-eclipse.buildId=4.31.0.20240307-1200
-java.version=17.0.7
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Framework arguments:  -product org.eclipse.epp.package.java.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\rueda\eclipse-workspace\UPM
 
-!ENTRY ch.qos.logback.classic 1 0 2024-04-11 14:07:25.450
-!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+!ENTRY org.eclipse.jdt.launching 4 4 2024-05-18 12:08:40.286
+!MESSAGE El sistema no puede encontrar la ruta especificada
+!STACK 0
+java.io.IOException: El sistema no puede encontrar la ruta especificada
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.base/java.io.File.createNewFile(File.java:1043)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin.writeInstallInfo(LaunchingPlugin.java:1110)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$1.saving(LaunchingPlugin.java:576)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:452)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:271)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1225)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2489)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:553)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
 
-!ENTRY ch.qos.logback.classic 1 0 2024-04-11 14:07:26.215
-!MESSAGE Logback config file: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+!ENTRY org.eclipse.core.resources 4 2 2024-05-18 12:08:40.288
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems while saving variables and containers
+	at org.eclipse.jdt.internal.core.JavaModelManager.saveVariablesAndContainers(JavaModelManager.java:4569)
+	at org.eclipse.jdt.internal.core.JavaModelManager.savingTimed(JavaModelManager.java:4838)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saving(JavaModelManager.java:4824)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:452)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:271)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1225)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2489)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:553)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: java.io.FileNotFoundException: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.jdt.core\variablesAndContainers.dat (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saveVariablesAndContainers(JavaModelManager.java:4564)
+	... 10 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 4 2024-05-18 12:08:40.289
+!MESSAGE Problems while saving variables and containers
+!STACK 0
+java.io.FileNotFoundException: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.jdt.core\variablesAndContainers.dat (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saveVariablesAndContainers(JavaModelManager.java:4564)
+	at org.eclipse.jdt.internal.core.JavaModelManager.savingTimed(JavaModelManager.java:4838)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saving(JavaModelManager.java:4824)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:452)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:271)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1225)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2489)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:553)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 1 org.eclipse.jdt.core 4 4 2024-05-18 12:08:40.289
+!MESSAGE Problems while saving variables and containers
+!STACK 0
+java.io.FileNotFoundException: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.jdt.core\variablesAndContainers.dat (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saveVariablesAndContainers(JavaModelManager.java:4564)
+	at org.eclipse.jdt.internal.core.JavaModelManager.savingTimed(JavaModelManager.java:4838)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saving(JavaModelManager.java:4824)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:452)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:271)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1225)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2489)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:553)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
 
-!ENTRY org.eclipse.egit.ui 2 0 2024-04-11 14:07:33.393
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\rueda'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2024-05-14 22:44:42.048 -----------------------------------------------
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-05-18 12:08:40.294
+!MESSAGE Can't write workspace state
+!STACK 0
+java.io.FileNotFoundException: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.m2e.core\workspaceState.ser (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:127)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:116)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:1043)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.saving(ProjectRegistryManager.java:1194)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:452)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:271)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1225)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2489)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:553)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.core.resources 4 566 2024-05-18 12:08:40.300
+!MESSAGE Could not save master table to file 'C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources.bak'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources.bak (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:52)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1331)
+	at org.eclipse.core.internal.resources.SaveManager.cleanMasterTable(SaveManager.java:305)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1234)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2489)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:553)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-05-18 12:08:41.333
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2024-05-18 12:08:41.334
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2024-05-18 12:08:41.334
+!MESSAGE Could not write metadata for '/.org.eclipse.egit.core.cmp'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.core.resources\.projects\.org.eclipse.egit.core.cmp\.markers (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:55)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1715)
+	at org.eclipse.core.internal.resources.SaveManager.lambda$7(SaveManager.java:1794)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.Nodes$CollectorTask.doLeaf(Nodes.java:2183)
+	at java.base/java.util.stream.Nodes$CollectorTask.doLeaf(Nodes.java:2149)
+	at java.base/java.util.stream.AbstractTask.compute(AbstractTask.java:327)
+	at java.base/java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:754)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2024-05-18 12:08:41.334
+!MESSAGE Could not write metadata for '/PROG24practica3'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.core.resources\.projects\PROG24practica3\.markers (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:55)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1715)
+	at org.eclipse.core.internal.resources.SaveManager.lambda$7(SaveManager.java:1794)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.Nodes$CollectorTask.doLeaf(Nodes.java:2183)
+	at java.base/java.util.stream.Nodes$CollectorTask.doLeaf(Nodes.java:2149)
+	at java.base/java.util.stream.AbstractTask.compute(AbstractTask.java:327)
+	at java.base/java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:754)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:686)
+	at java.base/java.util.stream.Nodes.collect(Nodes.java:328)
+	at java.base/java.util.stream.ReferencePipeline.evaluateToNode(ReferencePipeline.java:111)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at org.eclipse.core.internal.resources.SaveManager.lambda$6(SaveManager.java:1799)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1428)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SESSION 2024-05-18 12:09:18.624 -----------------------------------------------
 eclipse.buildId=4.31.0.20240307-1200
 java.version=17.0.7
 java.vendor=Oracle Corporation
@@ -26,19 +185,19 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY ch.qos.logback.classic 1 0 2024-05-14 22:44:44.637
+!ENTRY ch.qos.logback.classic 1 0 2024-05-18 12:09:20.507
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
-!ENTRY ch.qos.logback.classic 1 0 2024-05-14 22:44:45.700
+!ENTRY ch.qos.logback.classic 1 0 2024-05-18 12:09:21.385
 !MESSAGE Logback config file: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
 
-!ENTRY org.eclipse.egit.ui 2 0 2024-05-14 22:44:51.248
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-18 12:09:25.076
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\rueda'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2024-05-15 19:21:31.554 -----------------------------------------------
+!SESSION 2024-05-18 12:10:34.638 -----------------------------------------------
 eclipse.buildId=4.31.0.20240307-1200
 java.version=17.0.7
 java.vendor=Oracle Corporation
@@ -46,78 +205,31 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY ch.qos.logback.classic 1 0 2024-05-15 19:21:35.097
+!ENTRY ch.qos.logback.classic 1 0 2024-05-18 12:10:36.048
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
-!ENTRY ch.qos.logback.classic 1 0 2024-05-15 19:21:36.111
+!ENTRY ch.qos.logback.classic 1 0 2024-05-18 12:10:36.927
 !MESSAGE Logback config file: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
 
-!ENTRY org.eclipse.egit.ui 2 0 2024-05-15 19:21:41.660
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-18 12:10:40.824
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\rueda'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2024-05-15 21:14:40.418 -----------------------------------------------
-eclipse.buildId=4.31.0.20240307-1200
-java.version=17.0.7
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Framework arguments:  -product org.eclipse.epp.package.java.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY ch.qos.logback.classic 1 0 2024-05-15 21:14:42.843
-!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
-
-!ENTRY org.eclipse.core.resources 2 10035 2024-05-15 21:14:43.507
-!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
-
-!ENTRY ch.qos.logback.classic 1 0 2024-05-15 21:14:43.914
-!MESSAGE Logback config file: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
-
-!ENTRY org.eclipse.egit.ui 2 0 2024-05-15 21:14:47.926
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\rueda'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2024-05-18 11:24:11.672 -----------------------------------------------
-eclipse.buildId=4.31.0.20240307-1200
-java.version=17.0.7
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Framework arguments:  -product org.eclipse.epp.package.java.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
-
-!ENTRY ch.qos.logback.classic 1 0 2024-05-18 11:24:14.105
-!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
-
-!ENTRY ch.qos.logback.classic 1 0 2024-05-18 11:24:15.175
-!MESSAGE Logback config file: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
-
-!ENTRY org.eclipse.egit.ui 2 0 2024-05-18 11:24:19.389
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\rueda'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2024-05-18 11:28:46.261 -----------------------------------------------
-eclipse.buildId=4.31.0.20240307-1200
-java.version=17.0.7
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Framework arguments:  -product org.eclipse.epp.package.java.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\rueda\eclipse-workspace\UPM
-
-!ENTRY ch.qos.logback.classic 1 0 2024-05-18 11:28:47.808
-!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
-
-!ENTRY ch.qos.logback.classic 1 0 2024-05-18 11:28:48.744
-!MESSAGE Logback config file: C:\Users\rueda\eclipse-workspace\UPM\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
-
-!ENTRY org.eclipse.egit.ui 2 0 2024-05-18 11:28:52.207
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\rueda'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!ENTRY org.eclipse.ui.ide 4 0 2024-05-18 12:13:07.859
+!MESSAGE Could not import project located at C:\Users\rueda\eclipse-workspace\UPM
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at C:\Users\rueda\eclipse-workspace\UPM
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:555)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:246)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:211)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:95)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:594)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:542)
+	... 2 more
