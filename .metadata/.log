@@ -295,3 +295,13 @@ java.lang.NullPointerException: Cannot invoke "com.genuitec.copilot4eclipse.lsp.
 !MESSAGE Save operation warnings.
 !SUBENTRY 1 org.eclipse.core.resources 2 234 2024-05-18 12:47:51.338
 !MESSAGE The project description file (.project) for 'PROG24practica2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 2 2024-05-18 12:52:01.733
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2024-05-18 12:52:01.733
+!MESSAGE The project description file (.project) for 'PROG24practica3' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 2 2024-05-18 13:05:26.139
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2024-05-18 13:05:26.139
+!MESSAGE The project description file (.project) for 'PROG24practica5' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
