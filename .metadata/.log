@@ -285,3 +285,8 @@ java.lang.NullPointerException: Cannot invoke "com.genuitec.copilot4eclipse.lsp.
 	at com.genuitec.copilot4eclipse.Copilot4Eclipse.lambda$0(Unknown Source)
 	at com.genuitec.copilot4eclipse.Copilot4Eclipse$1.run(Unknown Source)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 2 2024-05-18 12:45:48.310
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2024-05-18 12:45:48.310
+!MESSAGE The project description file (.project) for 'PROG24practica1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
