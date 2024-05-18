@@ -11,13 +11,15 @@
 			<item value="C:\Users\rueda\Downloads\PROG24practica3\PROG24practica3"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\rueda\Downloads\PROG24practica2 (2).zip"/>
+			<item value="C:\Users\rueda\Downloads\PROG24practica1.zip"/>
 			<item value="C:\Users\rueda\Downloads\PROG24practica4.zip"/>
 			<item value="C:\Users\rueda\Downloads\PROG24practica5.zip"/>
 			<item value=""/>
 		</list>
 		<section name="ExternalProjectImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="225"/>
-			<item key="DIALOG_Y_ORIGIN" value="182"/>
+			<item key="DIALOG_X_ORIGIN" value="706"/>
+			<item key="DIALOG_Y_ORIGIN" value="187"/>
 			<item key="DIALOG_WIDTH" value="525"/>
 			<item key="DIALOG_HEIGHT" value="710"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
